@@ -10,7 +10,7 @@ int main() {
   std::string nazwisko = "Malinowski";
   int wiek = 23;
   const std::string pesel = "012121212";
-  std::string plec = "K";
+  char plec = 'K';
   float waga = 90.5;
   float wzrost = 176.35;
   bool w_zwiazku = false;
