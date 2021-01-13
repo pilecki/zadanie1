@@ -20,8 +20,12 @@ int main() {
   std::cout << "Wprowadz oceny: " << std::endl;
   
   for (int i = 0; i < 4; i++) {
-    std::cout << "Podaj ocenę: ";
+    std::cout << "Podaj ocenę: " << i + 1<< std::endl ;
     std::cin >> oceny[i];
+    if ( (oceny[i] > 6 ) || (oceny[i] < 1) ) {
+      std::cout << "\nBłędna wartość\n\n";
+      i--;
+    }
   }
 
   for (int i = 0; i < 4; i++ ) {
